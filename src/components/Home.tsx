@@ -4,6 +4,21 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 type Props = {};
 
 const Home = (props: Props) => {
+	// Function will execute on click of button
+	const onButtonClick = () => {
+		// using Java Script method to get PDF file
+		fetch("CV.pdf").then((response) => {
+			response.blob().then((blob) => {
+				// Creating new object of PDF file
+				const fileURL = window.URL.createObjectURL(blob); // Setting various property values
+				let alink = document.createElement("a");
+				alink.href = fileURL;
+				alink.download = "CV.pdf";
+				alink.click();
+			});
+		});
+	};
+
 	return (
 		<div className="bg-[#0a192f] w-full h-screen">
 			{/* Container */}
@@ -21,8 +36,10 @@ const Home = (props: Props) => {
 					retos que superar
 				</p>
 				<div>
-					<button className="text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-purple-600 hover:border-purple-600 duration-300 group">
-						View Work
+					<button
+						className="text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-purple-600 hover:border-purple-600 duration-300 group"
+						onClick={onButtonClick}>
+						Curriculum
 						<span className="group-hover:rotate-90 duration-300">
 							<HiArrowNarrowRight className="ml-2" />
 						</span>
