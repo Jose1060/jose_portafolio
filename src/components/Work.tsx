@@ -12,19 +12,21 @@ const Work = (props: Props) => {
 					</p>
 					<p className="py-6">Algunos de mis ultimos proyectos</p>
 				</div>
-				<div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-					<div className="shadow-lg shadow-[#040c16] group continer rounded-md flex justify-center items-center mx-auto content-div">
-						<div>
-							<span></span>
-							<div>
-								<a href="#">
-									<button></button>
-								</a>
-								<a href="#">
-									<button></button>
-								</a>
-							</div>
-						</div>
+				<div className="shadow-lg gap-10 rounded-md flex flex-col justify-center">
+					<div className="rounded-lg shadow-[#040c16] px-5 py-6 bg-white h-[200px] hover:scale-110 duration-300 flex-col flex">
+						<h1 className="text-black font-bold text-[22px]">SUGA</h1>
+						<p className="text-black text-[15px]">Poder Jucidial</p>
+						<p className=" self-end text-[13px] text-">
+							SpringBoot - Java - HTML - CSS - Bootstrap
+						</p>
+					</div>
+					<div className="rounded-lg shadow-[#040c16] px-5 py-6 bg-white h-[200px] hover:scale-110 duration-300">
+						<h1 className="text-black font-bold text-[22px]">ComelOso</h1>
+						<p className="text-black text-[15px]">Personal</p>
+					</div>
+					<div className="rounded-lg shadow-[#040c16] px-5 py-6 bg-white h-[200px] hover:scale-110 duration-300">
+						<h1 className="text-black font-bold text-[22px]">TechForest</h1>
+						<p className="text-black text-[15px]">Personal</p>
 					</div>
 				</div>
 			</div>
