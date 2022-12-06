@@ -8,8 +8,10 @@ import react from "../assets/react-2.svg";
 import reactNative from "../assets/react-native-1.svg";
 import tailwind from "../assets/tailwind-css-2.svg";
 import typescript from "../assets/typescript.svg";
+import profile from "../assets/Profile.jpg";
 
 export {
+	profile,
 	dart,
 	firebase,
 	flutter,

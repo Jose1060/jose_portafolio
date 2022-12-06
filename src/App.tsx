@@ -6,6 +6,8 @@ import Objectives from "./components/Objetives";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Foda from "./components/Foda";
+import Blog from "./components/Blog";
+import Recomendaciones from "./components/Recomendaciones";
 
 function App() {
 	return (
@@ -13,11 +15,12 @@ function App() {
 			<Navbar />
 			<Home />
 			<About />
-			<Objectives/>
+			<Objectives />
 			<Skills />
-			<Foda/>
+			<Foda />
 			<Work />
-			
+			<Blog />
+			<Recomendaciones />
 		</div>
 	);
 }

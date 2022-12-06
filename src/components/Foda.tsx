@@ -7,6 +7,11 @@ const Foda = (props: Props) => {
 	return (
 		<div className="bg-[#0a192f] text-gray-300 flex justify-center items-center pb-20">
 			<div className="flex flex-col justify-center items-center max-w-[1000px] h-full">
+				<div className="pb-24">
+					<p className="text-4xl font-bold inline border-b-4 text-gray-300 border-purple-400">
+						Mi FODA
+					</p>
+				</div>
 				<div className="grid grid-cols-2 gap-10">
 					<div className="h-[500px] w-[500px] bg-white rounded-lg flex flex-col p-10">
 						<div className="flex flex-row justify-between ">

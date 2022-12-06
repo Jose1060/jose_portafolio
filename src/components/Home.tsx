@@ -1,5 +1,6 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { profile } from "../assets";
 
 type Props = {};
 
@@ -23,6 +24,12 @@ const Home = (props: Props) => {
 		<div className="bg-[#0a192f] w-full h-screen">
 			{/* Container */}
 			<div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
+				<img
+					src={profile}
+					alt="perfil"
+					width={150}
+					className="rounded-full mb-10"
+				/>
 				<p className="text-purple-400">Hi, my name is </p>
 				<h1 className="text-4xl sm:text-7xl font-bold text-gray-400">
 					Jose Antonio
