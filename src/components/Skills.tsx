@@ -1,11 +1,14 @@
 import React from "react";
+import { Element } from "react-scroll";
 import { skills } from "../const";
 
 type Props = {};
 
 const Skills = (props: Props) => {
 	return (
-		<div className="bg-[#0a192f] text-gray-300 w-full min-h-screen">
+		<Element
+			name="skills"
+			className="bg-[#0a192f] text-gray-300 w-full min-h-screen">
 			<div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
 				<div>
 					<p className="text-4xl font-bold inline border-b-4 border-purple-400">
@@ -26,7 +29,7 @@ const Skills = (props: Props) => {
 					})}
 				</div>
 			</div>
-		</div>
+		</Element>
 	);
 };
 

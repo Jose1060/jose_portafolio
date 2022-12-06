@@ -1,5 +1,6 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { Element } from "react-scroll";
 import { profile } from "../assets";
 
 type Props = {};
@@ -21,7 +22,7 @@ const Home = (props: Props) => {
 	};
 
 	return (
-		<div className="bg-[#0a192f] w-full h-screen">
+		<Element name="home" className="bg-[#0a192f] w-full h-screen">
 			{/* Container */}
 			<div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
 				<img
@@ -53,7 +54,7 @@ const Home = (props: Props) => {
 					</button>
 				</div>
 			</div>
-		</div>
+		</Element>
 	);
 };
 

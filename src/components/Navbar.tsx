@@ -3,6 +3,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import logo from "../assets/logo.svg";
+import { Link } from "react-scroll";
 
 type Props = {};
 
@@ -19,11 +20,46 @@ const Navbar = (props: Props) => {
 			{/* Menu */}
 
 			<ul className="hidden md:flex">
-				<li>Home</li>
-				<li>About</li>
-				<li>Skills</li>
-				<li>Work</li>
-				<li>Contacts</li>
+				<li>
+					<Link to="home" smooth={true} duration={500}>
+						Home
+					</Link>
+				</li>
+				<li>
+					<Link to="about" smooth={true} duration={500}>
+						About
+					</Link>
+				</li>
+				<li>
+					<Link to="objectives" smooth={true} duration={500}>
+						Objectives
+					</Link>
+				</li>
+				<li>
+					<Link to="skills" smooth={true} duration={500}>
+						Skills
+					</Link>
+				</li>
+				<li>
+					<Link to="foda" smooth={true} duration={500}>
+						Foda
+					</Link>
+				</li>
+				<li>
+					<Link to="work" smooth={true} duration={500}>
+						Work
+					</Link>
+				</li>
+				<li>
+					<Link to="blog" smooth={true} duration={500}>
+						Blog
+					</Link>
+				</li>
+				<li>
+					<Link to="recomendaciones" smooth={true} duration={500}>
+						Recomendaciones
+					</Link>
+				</li>
 			</ul>
 
 			{/* Hamburger */}

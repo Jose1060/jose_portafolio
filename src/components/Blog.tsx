@@ -1,10 +1,13 @@
 import React from "react";
+import { Element } from "react-scroll";
 
 type Props = {};
 
 const Blog = (props: Props) => {
 	return (
-		<div className="bg-[#0a192f] text-gray-300 flex justify-center items-center pb-20">
+		<Element
+			name="blog"
+			className="bg-[#0a192f] text-gray-300 flex justify-center items-center pb-20 pt-40">
 			<div className="flex flex-col justify-center items-center max-w-[1000px] h-full">
 				<div className="pb-24">
 					<p className="text-4xl font-bold inline border-b-4 text-gray-300 border-purple-400">
@@ -78,7 +81,7 @@ const Blog = (props: Props) => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</Element>
 	);
 };
 
